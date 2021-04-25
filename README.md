@@ -108,3 +108,38 @@ Esc key
      
 Check your progress                                                                                                                                             
 
+
+# Task 5: Update the deployment with a new version of valkyrie-app
+
+->cd ..
+
+->ls
+
+->git merge origin/kurt-dev
+
+->kubectl edit deployment valkyrie-dev
+
+change value of image in containers
+image: gcr.io/[GCP Project ID]/valkyrie-app:v0.0.2
+
+spec:
+replicas: 3
+.
+.
+.
+replicas: 3                (3rd last line)
+Increase the replicas from 1 to 3
+
+<ESC>
+
+:wq
+
+->docker build -t valkyrie-app:v.0.0.2 .
+
+->docker tag valkyrie-app:v.0.0.2 gcr.io/$PROJECT/valkyrie-app:v0.0.2
+
+->docker images
+
+->docker push gcr.io/$PROJECT/valkyrie-app:v0.0.2
+
+Check your progress
