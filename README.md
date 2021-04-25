@@ -116,19 +116,19 @@ Check your progress
 ->git merge origin/kurt-dev                       
 
 ->kubectl edit deployment valkyrie-dev
-
-change value of image in containers
+ 
+change value of image in containers                                   
 image: gcr.io/[GCP Project ID]/valkyrie-app:v0.0.2
 
-spec:
-replicas: 3
+spec:                    
+replicas: 3                    
+.               
+.                     
 .
-.
-.
-replicas: 3                (3rd last line)
-Increase the replicas from 1 to 3
+replicas: 3                  (3rd last line)                           
+Increase the replicas from 1 to 3                        
 
-<ESC>
+<ESC>                    
 
 :wq
 
