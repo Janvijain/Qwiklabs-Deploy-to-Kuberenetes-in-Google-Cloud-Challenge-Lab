@@ -107,18 +107,20 @@ image: gcr.io/[GCP Project ID]/valkyrie-app:v0.0.1
      
 Check your progress                                                                                                 
 
+
+
 # Task 5: Update the deployment with a new version of valkyrie-app
 
 ->cd ..                
 
 ->ls                               
 
-->git merge origin/kurt-dev                       
+->git merge origin/kurt-dev                                                             
 
-->kubectl edit deployment valkyrie-dev
+->kubectl edit deployment valkyrie-dev                                  
  
 change value of image in containers                                   
-image: gcr.io/[GCP Project ID]/valkyrie-app:v0.0.2
+image: gcr.io/[GCP Project ID]/valkyrie-app:v0.0.2                                      
 
 spec:                    
 replicas: 3                    
@@ -130,17 +132,19 @@ Increase the replicas from 1 to 3
 
 <ESC>                    
 
-:wq
+:wq                                        
 
-->docker build -t valkyrie-app:v.0.0.2 .
+->docker build -t valkyrie-app:v.0.0.2 .                                               
 
-->docker tag valkyrie-app:v.0.0.2 gcr.io/$PROJECT/valkyrie-app:v0.0.2
+->docker tag valkyrie-app:v.0.0.2 gcr.io/$PROJECT/valkyrie-app:v0.0.2                                     
 
-->docker images
+->docker images                                              
 
-->docker push gcr.io/$PROJECT/valkyrie-app:v0.0.2
+->docker push gcr.io/$PROJECT/valkyrie-app:v0.0.2                                         
 
-Check your progress                                               
+Check your progress                                                        
+
+
 
 # Task 6: Create a pipeline in Jenkins to deploy your app
 
