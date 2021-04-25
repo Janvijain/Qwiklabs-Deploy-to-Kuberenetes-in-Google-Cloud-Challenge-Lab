@@ -105,7 +105,7 @@ image: gcr.io/[GCP Project ID]/valkyrie-app:v0.0.1
 
 ->kubectl create -f ./service.yaml                      
      
-Check your progress                          
+Check your progress                                                                                                 
 
 # Task 5: Update the deployment with a new version of valkyrie-app
 
@@ -140,7 +140,7 @@ Increase the replicas from 1 to 3
 
 ->docker push gcr.io/$PROJECT/valkyrie-app:v0.0.2
 
-Check your progress
+Check your progress                                               
 
 # Task 6: Create a pipeline in Jenkins to deploy your app
 
