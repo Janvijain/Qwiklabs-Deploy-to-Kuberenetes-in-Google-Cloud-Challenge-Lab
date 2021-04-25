@@ -95,15 +95,15 @@ Check your progress
 change value of image in containers                                
 image: gcr.io/[GCP Project ID]/valkyrie-app:v0.0.1                               
 
-<ESC>                  
+<ESC>                                                       
 
 :wq                   
+                                                                                
+->gcloud container clusters get-credentials valkyrie-dev --zone us-east1-d                                                                
+                               
+->kubectl create -f ./deployment.yaml                                                                                        
 
-->gcloud container clusters get-credentials valkyrie-dev --zone us-east1-d                                       
-
-->kubectl create -f ./deployment.yaml                                                
-
-->kubectl create -f ./service.yaml                      
+->kubectl create -f ./service.yaml                                      
      
 Check your progress                                                                                                 
 
@@ -198,7 +198,7 @@ Cloud Shell
 Go to Jenkins Page                     
 On the left menu -> Build Now               
 
-Congratulations!... You have successfully completed this challenge lab.
+Congratulations!... You have successfully completed this challenge lab. Don't Forget to Subscribe my Channel.
 
 
 
