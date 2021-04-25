@@ -3,6 +3,7 @@
 Step by Step Guide to solve this challenge. Can refer my YoutTube video far the same : https://youtu.be/SmbBhmOeh8c
 
 # Task 1: Create a Docker image and store the Dockerfile
+
 Open Cloud Shell              
 ->  source <(gsutil cat gs://cloud-training/gsp318/marking/setup_marking.sh)              
 
@@ -95,19 +96,17 @@ Check your progress
 change value of image in containers                                
 image: gcr.io/[GCP Project ID]/valkyrie-app:v0.0.1                               
 
-<ESC>                                                       
+Esc key                                                       
 
-:wq                   
+:wq                                        
                                                                                 
 ->gcloud container clusters get-credentials valkyrie-dev --zone us-east1-d                                                                
                                
-->kubectl create -f ./deployment.yaml                                                                                        
+->kubectl create -f ./deployment.yaml                                                                                                          
 
 ->kubectl create -f ./service.yaml                                      
      
-Check your progress                                                                                                 
-
-
+Check your progress                                                                                                                                             
 
 # Task 5: Update the deployment with a new version of valkyrie-app
 
