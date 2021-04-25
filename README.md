@@ -98,7 +98,7 @@ image: gcr.io/[GCP Project ID]/valkyrie-app:v0.0.1
 
 Esc key                                                       
 
-:wq                                        
+:wq                                                                                            
                                                                                 
 ->gcloud container clusters get-credentials valkyrie-dev --zone us-east1-d                                                                
                                
