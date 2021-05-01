@@ -1,6 +1,6 @@
 # Qwiklabs Deploy to Kuberenetes in Google Cloud Challenge Lab
 
-Step by Step Guide to solve this challenge. Can refer my YoutTube video far the same : https://youtu.be/SmbBhmOeh8c
+Step by Step Guide to solve this challenge. Can refer my YouTube video far the same : https://youtu.be/SmbBhmOeh8c
 
 # Task 1: Create a Docker image and store the Dockerfile
 
